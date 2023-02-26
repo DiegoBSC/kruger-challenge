@@ -16,6 +16,10 @@
 
 ![image](https://user-images.githubusercontent.com/62367756/221442652-91aab26f-11cb-4e53-9b0f-550881a6ba7f.png)
 
+1. Criterio de aceptación Administrador.
+
+![image](https://user-images.githubusercontent.com/62367756/221443555-4df17380-1e82-477d-9c19-cd249f58bfdc.png)
+
 
 El proyecto tiene implementado swagger para la documentacion y test de end points, para ingresar apuntar la siguiente ruta: **http://localhost:8080/api/swagger-ui/index.html#/** , el cual tambien se peude verificad con las credenciales del administrador **Usuario: admin Clave: Admin2022**
 
