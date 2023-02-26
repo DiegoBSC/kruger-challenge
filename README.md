@@ -25,7 +25,10 @@
 ![image](https://user-images.githubusercontent.com/62367756/221443765-62e9eced-aad7-4600-994e-d713d0f08670.png)
 
 
-El proyecto tiene implementado swagger para la documentacion y test de end points, para ingresar apuntar la siguiente ruta: **http://localhost:8080/api/swagger-ui/index.html#/** , el cual tambien se peude verificad con las credenciales del administrador **Usuario: admin Clave: Admin2022**
+El proyecto tiene implementado swagger para la documentacion y test de end points, para ingresar apuntar la siguiente ruta: **http://localhost:8080/api/swagger-ui/index.html#/** , el cual tambien se peude verificad con las credenciales del administrador **Usuario: admin Clave: Admin2022** aqui se podra revisar el respectivo manejo de cada endpoint.
+
+![image](https://user-images.githubusercontent.com/62367756/221444118-f0bd4474-f6f7-4543-8c9b-e99857b8a906.png)
+
 
 
 Proyecto desarrollado por Diego Acosta ©
