@@ -46,7 +46,6 @@ public class EmployeeDto implements Comparable<EmployeeDto> {
     private Status status;
     private String phone;
     private Boolean active;
-    private List<EmployeeVaccine> employeeVaccine = new ArrayList<>();
 
     @Override
     public int compareTo(EmployeeDto other) {
