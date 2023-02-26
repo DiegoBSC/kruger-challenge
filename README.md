@@ -12,6 +12,12 @@
 
 7. Se carga datos del usuario clave. **Usuario: admin Clave: Admin2022**
 
-8. Para el uso de los endpoints, se debe hacer primero la autenticación, para luego verificar la autorización. Se utiliza e implementa JWT para obtener el token de autenticación, esto es un POST, llamado login donde se obtiene el respectivo token.
+8. Para el uso de los endpoints, se debe hacer primero la autenticación, Se utiliza e implementa JWT y spring security para obtener el token de autenticación,el end point es **localhost:8080/api/public/login** 
 
 ![image](https://user-images.githubusercontent.com/62367756/221442652-91aab26f-11cb-4e53-9b0f-550881a6ba7f.png)
+
+
+El proyecto tiene implementado swagger para la documentacion y test de end points, para ingresar apuntar la siguiente ruta: **http://localhost:8080/api/swagger-ui/index.html#/** , el cual tambien se peude verificad con las credenciales del administrador **Usuario: admin Clave: Admin2022**
+
+
+Proyecto desarrollado por Diego Acosta ©
