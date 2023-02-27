@@ -92,15 +92,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResponseEntity login(AuthCredential presenter){
+    public ResponseEntity login(AuthCredential authCredential){
         Optional<User> user = userRepository
-                .findByUsername(presenter.getUsername());
+                .findByUsername(authCredential.getUsername());
 
         if(user.isEmpty())
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Credenciales incorrectas");
 
 
-        if(passwordEncoder.matches(presenter.getPassword(), user.get().getPassword())){
+        if(passwordEncoder.matches(authCredential.getPassword(), user.get().getPassword())){
             UserDto userDto = userMapper.toDto(user.get());
             return new ResponseEntity(new TokenDto(TokenUtils.generateToken(user.get().getUsername(), user.get().getEmail(), user.get().getRoles()), userDto), HttpStatus.OK);
         }else {
