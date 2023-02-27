@@ -2,6 +2,7 @@ package com.kruger.challenge.dto.employee;
 
 import com.kruger.challenge.dto.employee.EmployeeDto;
 import com.kruger.challenge.dto.vaccine.VaccineDto;
+import com.kruger.challenge.model.Vaccine;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

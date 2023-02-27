@@ -17,6 +17,9 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -46,5 +49,11 @@ public class EmployeeVaccineServiceImpl implements EmployeeVaccineService {
                 .build();
 
         return employeeVaccineMapper.toDto(employeeVaccineRepository.save(employeeVaccine));
+    }
+
+    @Override
+    public List<EmployeeVaccineDto> vaccineByEmployee(UUID employeeId) {
+        List<EmployeeVaccine> vaccines = employeeVaccineRepository.findByEmployeeId(employeeId).orElse(new ArrayList<EmployeeVaccine>());
+        return employeeVaccineMapper.toVaccineDtoList(vaccines);
     }
 }
