@@ -1,5 +1,6 @@
 package com.kruger.challenge.service;
 
+import com.kruger.challenge.dto.TokenDto;
 import com.kruger.challenge.dto.employee.EmployeeDto;
 import com.kruger.challenge.dto.user.UserDto;
 import com.kruger.challenge.model.Employee;
@@ -20,5 +21,5 @@ public interface UserService {
 
     List<UserDto> getUsers();
 
-    ResponseEntity login(AuthCredential presenter);
+    ResponseEntity<TokenDto> login(AuthCredential presenter);
 }

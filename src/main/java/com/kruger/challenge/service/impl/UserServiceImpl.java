@@ -92,7 +92,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public ResponseEntity login(AuthCredential authCredential){
+    public ResponseEntity<TokenDto> login(AuthCredential authCredential){
         Optional<User> user = userRepository
                 .findByUsername(authCredential.getUsername());
 

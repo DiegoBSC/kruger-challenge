@@ -1,7 +1,7 @@
 INSERT INTO roles(id, name)
-VALUES('88a0ff34-8d3d-4d88-baf2-8de10f76390c', 'Administrator');
+VALUES('88a0ff34-8d3d-4d88-baf2-8de10f76390c', 'ROLE_ADMIN');
 INSERT INTO roles(id, name)
-VALUES('dff9e818-2a59-4eb2-a250-0c094183dada', 'Employee');
+VALUES('dff9e818-2a59-4eb2-a250-0c094183dada', 'ROLE_USER');
 
 INSERT INTO employees (id, document, first_name, last_name, email, birth_date, address, phone, status, active)
             VALUES('50d5721b-6acc-4fb2-95a0-3df969094f4c', '1717744310', 'Diego', 'Acosta',

@@ -6,6 +6,7 @@ import com.kruger.challenge.service.EmployeeVaccineService;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class EmployeeVaccineController {
 
     @Operation(summary = "Endpoint registrar la vacuna por empleado", description = "Retorna se realiza la relacion de empleado y su vacuna respectiva")
     @PostMapping("/save")
+    @PreAuthorize("hasRole('ROLE_USER') OR hasRole('ROLE_ADMIN')")
     public EmployeeVaccineDto saveVaccineEmployee(@RequestBody @NotNull EmployeeVaccineRequest employeeVaccineRequest){
         return employeeVaccineService.saveVaccineEmployee(employeeVaccineRequest);
     }

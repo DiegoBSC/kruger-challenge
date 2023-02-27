@@ -19,12 +19,14 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/addRoleToUser")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public UserDto addRoleToUser (@RequestParam @NotNull @NotBlank UUID userId,
                                   @RequestParam @NotNull @NotBlank UUID roleId) {
         return userService.addRoleToUser(userId, roleId);
     }
 
     @GetMapping("/deleteRoleToUser")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public UserDto deleteRoleToUser (@RequestParam @NotNull @NotBlank UUID userId,
                                            @RequestParam @NotNull @NotBlank UUID roleId) {
         return userService.addRoleToUser(userId, roleId);
