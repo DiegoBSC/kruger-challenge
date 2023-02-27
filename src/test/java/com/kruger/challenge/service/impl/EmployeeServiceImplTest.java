@@ -31,11 +31,6 @@ class EmployeeServiceImplTest {
     private EmployeeServiceImpl employeeService;
     @Mock
     private EmployeeRepository employeeRepository;
-
-//    @Mock
-//    private RolService rolService;
-//    @Mock
-//    private UserRepository userRepository;
     @Mock
     private EmployeeMapper employeeMapper;
 
